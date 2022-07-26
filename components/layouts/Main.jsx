@@ -1,8 +1,14 @@
 import Head from 'next/head';
 import Navbar from '../Navbar';
+import { useProvider } from '../../context/ContextProvider';
 const Main = ({ children }) => {
+  const { dark } = useProvider();
   return (
-    <div className="w-full h-full bg-slate-900 ">
+    <div
+      className={`w-full h-full ${
+        dark ? 'bg-slate-900 ' : 'bg-slate-50'
+      } transition-all`}
+    >
       <div className="w-4/5 max-w-[900px] mx-auto">
         <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
