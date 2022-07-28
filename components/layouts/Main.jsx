@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 import HeaderPages from '../HeaderPages';
+import HeaderPageText from '../HeaderPageText';
 import { useProvider } from '../../context/ContextProvider';
 const Main = ({ children }) => {
   const { dark } = useProvider();
@@ -44,7 +45,7 @@ const Main = ({ children }) => {
           <title>Takuya Matsuyama - Homepage</title>
         </Head>
         <Navbar />
-        <HeaderPages />
+        <HeaderPageText />
         <main>{children}</main>
         <Footer />
       </div>

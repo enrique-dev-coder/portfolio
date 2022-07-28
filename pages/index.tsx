@@ -24,7 +24,7 @@ const Home: NextPage = () => {
         <div className="text-white mb-[40px]">
           <Title title={'Work'} />
           <p className="mb-8">
-            I´m a full-stak developer focused on building beatufil and useful
+            I´m a full-stak developer focused on building beautiful and useful
             user interfaces. I have a degree in manufacturing and industrial
             engineering but my passion for digital products and services bring
             me to the path of development.Glad for finding the correct people
